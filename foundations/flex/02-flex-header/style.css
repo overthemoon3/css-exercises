@@ -1,7 +1,29 @@
 .header  {
   font-family: monospace;
   background: papayawhip;
+  display: flex;
+  margin-top: 20px;
+  padding: 15px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
 }
+
+.header .right-links {
+  justify-content: flex-end;
+}
+
+
+.header .logo {
+  justify-content: center;
+}
+
+.header .left-links {
+  justify-content: flex-start;
+  margin-left: -40px;
+  
+}
+
 
 .logo {
   font-size: 48px;
@@ -9,6 +31,24 @@
   color: tomato;
   background: white;
   padding: 4px 32px;
+  justify-content: center;
+  margin-left: 40px;
+}
+
+.left-links, .right-links {
+  display: flex;
+}
+
+
+.left-links ul {
+  display: flex;
+  gap: 10px;
+  justify-content: flex-start;
+}
+
+.right-links ul {
+  display: flex;
+  gap: 10px;
 }
 
 ul {
